@@ -781,6 +781,24 @@
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": true
+                },
+                {
+                    "name": "Canvas Menu",
+                    "type": "Button",
+                    "id": "912d4ee2-fb97-4f59-a11f-830e1297338f",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "Main Menu",
+                    "type": "Button",
+                    "id": "323dc27d-7959-496e-9a5f-45444fd25c32",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
                 }
             ],
             "bindings": [
@@ -946,6 +964,28 @@
                     "processors": "ScaleVector2(x=0),StickDeadzone",
                     "groups": "Generic XR Controller",
                     "action": "Scale Delta",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "5acbe25e-640b-4cc0-b734-1157dafd0494",
+                    "path": "<XRController>{LeftHand}/{PrimaryButton}",
+                    "interactions": "Press(behavior=2)",
+                    "processors": "",
+                    "groups": "Generic XR Controller",
+                    "action": "Canvas Menu",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "3700353d-fc70-40de-808d-d06ae5b125a5",
+                    "path": "<XRController>{LeftHand}/{SecondaryButton}",
+                    "interactions": "Press(behavior=2)",
+                    "processors": "",
+                    "groups": "Generic XR Controller",
+                    "action": "Main Menu",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }
