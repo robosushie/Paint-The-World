@@ -6,6 +6,7 @@ using UnityEngine.XR.Interaction.Toolkit;
 public class PaintController : MonoBehaviour
 {
     public ParticleSystem MainParticleSystem;
+    public AudioSource audio;
 
     // Start is called before the first frame update
     void Start()
@@ -18,11 +19,20 @@ public class PaintController : MonoBehaviour
     private void StopPainting(DeactivateEventArgs arg0)
     {
         MainParticleSystem.Stop();
+        if(audio!= null)
+        {
+            audio.Stop();
+        }
+        
     }
 
     private void StartPainting(ActivateEventArgs arg0)
     {
         MainParticleSystem.Play();
+        if(audio!= null)
+        {
+            audio.Play();
+        }
     }
 
 }
